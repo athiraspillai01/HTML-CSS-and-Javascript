@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning Platform</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">LearnOnline</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#courses">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#register">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5 mb-4">
+    <div class="container">
+      <h1>Welcome to LearnOnline</h1>
+      <p>Your gateway to knowledge</p>
+    </div>
+  </header>
+
+  <div class="container mt-4">
+    <div id="courses" class="mb-5">
+      <h2 class="mb-4 text-center">Available Courses</h2>
+      <div id="course-list" class="row">
+        <!-- Course cards will be dynamically added here -->
+      </div>
+    </div>
+
+    <div id="register" class="mb-5">
+      <h2 class="mb-4 text-center">User Registration</h2>
+      <form id="register-form" class="shadow p-4 bg-white rounded">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+      </form>
+    </div>
+
+    <div id="video-content" class="mb-5">
+      <h2 class="mb-4 text-center">Course Content</h2>
+      <div class="embed-responsive embed-responsive-16by9 shadow">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="quiz-section" class="mb-5">
+      <h2 class="mb-4 text-center">Quiz</h2>
+      <form id="quiz-form" class="shadow p-4 bg-white rounded">
+        <div class="form-group">
+          <label>Question 1: What does CSS stand for?</label><br>
+          <input type="radio" name="question1" value="3"> A. Computer Style Sheets<br>
+          <input type="radio" name="question1" value="4"> B. Creative Style Sheets<br>
+          <input type="radio" name="question1" value="5"> C. Cascading Style Sheets<br>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Quiz</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 LearnOnline. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

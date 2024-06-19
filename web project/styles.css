@@ -1,0 +1,42 @@
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa;
+  }
+  
+  header {
+    background-image: url('https://source.unsplash.com/1600x900/?education');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  h2 {
+    color: #343a40;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control {
+    border-radius: 0.25rem;
+  }
+  
+  #register-form, #quiz-form {
+    border-radius: 0.25rem;
+  }
+  
+  .embed-responsive {
+    border-radius: 0.25rem;
+    overflow: hidden;
+  }
+  
+  footer {
+    background-color: #343a40;
+  }
+  
+  
